@@ -37,7 +37,7 @@ The analysis has two goals:
 - **RMI weather observations** — 10-minute weather readings from 17 stations across Belgium, available at [opendata.meteo.be](https://opendata.meteo.be). Variables include precipitation, temperature, wind speed, wind gusts, humidity, pressure, and solar radiation.
 
 ### Merged dataset
-The two datasets were joined by matching each AWV cycling site to its nearest RMI weather station (spatial nearest-neighbour matching) and aligning timestamps to the nearest 15-minute interval. The result is `cycling_weather_full.parquet` (~271 MB, ~40 million rows).
+The two datasets were joined by matching each AWV cycling site to its nearest RMI weather station (spatial nearest-neighbour matching) and aligning timestamps to the nearest 15-minute interval. The result is `cycling_weather_full.parquet` (~271 MB, ~40 million rows). This file is not included in the repository due to size. To reproduce the analysis, download both source datasets and run the merging pipeline or contact the authors.
 
 ### Key variables used
 
